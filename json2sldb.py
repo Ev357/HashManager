@@ -1,5 +1,16 @@
 #!/usr/bin/python3
-import sqlite3 as sl, os, json
+import sqlite3 as sl, os, json, argparse
+
+parser = argparse.ArgumentParser(add_help=False, usage="%(prog)s [-h] -i INPUT [-o OUTPUT]")
+required = parser.add_argument_group('required arguments')
+required.add_argument('-i', '--input', help='Input file name', required=True, action="store_true")
+optional = parser.add_argument_group('optional arguments')
+optional.add_argument('-o', '--output', help='Output file name', default='out.db', action="store_true")
+optional.add_argument("-h", "--help", action="help", help="show this help message and exit")
+parser._action_groups.reverse()
+args = parser.parse_args()
+
+print(args)
 
 fcd = os.path.dirname(os.path.realpath(__file__)) + '/'
 data = json.load(open(fcd + './data.json'))
