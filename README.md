@@ -1,4 +1,4 @@
-#Hash Manager
+# Hash Manager
 
 - This is just a simple program i create for managing hashes, if you find any bugs or ideas how to make this better, i will love to hear it (Maybe not so much the bugs tho XD).
 
