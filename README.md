@@ -11,10 +11,7 @@ sudo apt-get install python3-pil.imagetk python3-tk
 
 - You can use it like this:
 ```console
-┌─[evest@evest-qiqi]
-└──╼ $./json2sldb.py -i exclude/data.json -o out.db
-┌─[evest@evest-qiqi]
-└──╼ $
+evest@evest-qiqi:~$ ./json2sldb.py -i exclude/data.json -o out.db
 ```
 - I also wrote a program that converts the json data to the database format expected by the main program. The json can look for example like this:
 ```json
