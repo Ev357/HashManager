@@ -1,7 +1,7 @@
-# Hash Manager
-
+## Hash Manager
 - This is just a simple program i create for managing hashes, if you find any bugs or ideas how to make this better, i will love to hear it (Maybe not so much the bugs tho XD).
 
+# Installation
 - Apt packages to install: 
 ```bash
 sudo apt-get install python3-pil.imagetk python3-tk
@@ -10,6 +10,9 @@ sudo apt-get install python3-pil.imagetk python3-tk
 ```bash
 pip3 install -r requirements.txt
 ```
+
+# Usage
+- You can copy the data from the items with a right click
 
 - I didn't manage to optimze the size of the items automaticly, so you must edit them manually in the file.
 
