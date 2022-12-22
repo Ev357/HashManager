@@ -1,23 +1,19 @@
 #!/usr/bin/python3
 import sqlite3 as sl, os, json, argparse
 
-parser = argparse.ArgumentParser(add_help=False, usage="%(prog)s [-h] -i INPUT [-o OUTPUT]")
+parser = argparse.ArgumentParser()
+parser.add_argument('-o', '--output', help='Output file name', default='out.db', action="store")
 required = parser.add_argument_group('required arguments')
-required.add_argument('-i', '--input', help='Input file name', required=True, action="store_true")
-optional = parser.add_argument_group('optional arguments')
-optional.add_argument('-o', '--output', help='Output file name', default='out.db', action="store_true")
-optional.add_argument("-h", "--help", action="help", help="show this help message and exit")
+required.add_argument('-i', '--input', help='Input file name', required=True, action="store")
 parser._action_groups.reverse()
 args = parser.parse_args()
 
-print(args)
-
 fcd = os.path.dirname(os.path.realpath(__file__)) + '/'
-data = json.load(open(fcd + './data.json'))
+data = json.load(open(fcd + args.input))
 
 conn = None
 try:
-    conn = sl.connect(fcd + "./db/out.db")
+    conn = sl.connect(fcd + args.output)
 except sl.Error as e:
     print(e)
     exit()
