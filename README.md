@@ -13,7 +13,7 @@ sudo apt-get install python3-pil.imagetk python3-tk
 ```console
 ./json2sldb.py -i exclude/data.json -o out.db
 ```
-- The json can look for example like this:
+- The json file can look for example like this:
 ```json
 [
     {"username": "david", "hash": "25f9e794323b453885f5181f1b624d0b", "password": "123456789", "state": 1},
