@@ -2,9 +2,9 @@
 
 - This is just a simple program i create for managing hashes, if you find any bugs or ideas how to make this better, i will love to hear it (Maybe not so much the bugs tho XD).
 
-- In some devices you must install the imagetk library: 
+- Packages to install: 
 ```bash
-sudo apt-get install python3-pil.imagetk
+sudo apt-get install python3-pil.imagetk python3-tk
 ```
 
 - I didn't manage to optimze the size of the items automaticly, so you must edit them manually in the file.
