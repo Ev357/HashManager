@@ -2,15 +2,19 @@
 
 - This is just a simple program i create for managing hashes, if you find any bugs or ideas how to make this better, i will love to hear it (Maybe not so much the bugs tho XD).
 
-- Packages to install: 
+- Apt packages to install: 
 ```bash
 sudo apt-get install python3-pil.imagetk python3-tk
+```
+- Pip3 packages to install:
+```bash
+pip3 install -r requirements.txt
 ```
 
 - I didn't manage to optimze the size of the items automaticly, so you must edit them manually in the file.
 
 - I also wrote a program that converts the json data to the database format expected by the main program. Usage example:
-```console
+```bash
 ./json2sldb.py -i exclude/data.json -o out.db
 ```
 - The json file can look for example like this:
