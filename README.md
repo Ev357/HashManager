@@ -18,7 +18,7 @@ pip3 install -r requirements.txt
 
 - I also wrote a program that converts the json data to the database format expected by the main program. Usage example:
 ```bash
-./json2sldb.py -i exclude/data.json -o out.db
+./json2sldb.py -i data.json -o out.db
 ```
 - The json file can look for example like this:
 ```json
