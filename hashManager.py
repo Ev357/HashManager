@@ -85,6 +85,9 @@ fr = "SELECT * FROM data;"
 #Sqlite stuff
 conn = None
 
+if not os.path.exists("db"):
+    os.makedirs("db")
+
 if deleteDataOnStartup:
     os.system(f"rm {fcd}./db/database.db")
 try:
