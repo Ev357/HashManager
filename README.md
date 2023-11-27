@@ -1,5 +1,5 @@
 # Hash Manager
-- This is just a simple program i create for managing hashes, if you find any bugs or ideas how to make this better, i will love to hear it (Maybe not so much the bugs tho XD).
+- This is just a simple program i create for managing hashes i created for fun, if you find any bugs or ideas how to make this better, i will love to hear it (Maybe not so much the bugs tho XD).
 
 ## Installation
 - Apt packages to install: 
